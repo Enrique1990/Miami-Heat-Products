@@ -27,13 +27,21 @@ const left2 ={
      
      
 }
+const tab = {
+    
+    width:' 74vw',
+    height:' 20vh',
+    position: 'absolute',
+    margin: '106px',
+    // border: '4px',
+}
  
  const left = {
      float: 'left',
      backgroundSize: '100% 100%',
      backgroundPosition: 'center',
      backgroundRepeat:'no-repeat',
-     backgroundColor:'whitw',
+     backgroundColor:'white',
      width:'100%',
      height: '800px'
  }
@@ -125,7 +133,7 @@ class DayI extends React.Component{
 
     render(){
 
-        const items = []
+        const items = [];
 
         for (let i=0; i < this.state.dates.length; i++) { 
             if (this.state.dates[i].startsWith(this.state.dateReq)) {
@@ -139,7 +147,7 @@ class DayI extends React.Component{
                 
                     <h1> Today's Weather Information: {this.state.dateReq}</h1>
                     <br/>
-                    <table border="1">
+                    <table border="2">
                         <tr>   <td>Date</td>     <td>Weather</td>    <td>Min</td>   <td>Max</td>      </tr>
                         {items}
 

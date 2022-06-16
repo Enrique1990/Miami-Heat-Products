@@ -1,5 +1,6 @@
 {
   "name": "miami-heat",
+  "homepage": "http://localhost/weather/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

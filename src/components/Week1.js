@@ -30,9 +30,9 @@ const h1day ={
 const left2 ={
     position:'relative',
     right: '2px',
-    top: '9px',
-    height: '530px',
-    padding:'80px 250px',
+    top: '-3px',
+    height: '465px',
+    padding:'98px 250px',
     textAlign: 'center',
     // top: '115px',
     // position: 'absolute',
@@ -216,7 +216,7 @@ class Week1 extends React.Component{
 
 
         day.innerHTML = "Saturday";
-        pic.src = sunny;
+        pic.src = rain;
         temp.innerHTML = (this.state.mins[index] + "&nbsp;" + this.state.maxs[index]);
     }
     DrawSunday = () =>{
@@ -227,7 +227,7 @@ class Week1 extends React.Component{
         index = index > 39 || index < 0 ? 3 : index;
 
         day.innerHTML = "Sunday";
-        pic.src = sunny;
+        pic.src = wind;
         temp.innerHTML = (this.state.mins[index] + "&nbsp;" + this.state.maxs[index]);
     }
     render(){
